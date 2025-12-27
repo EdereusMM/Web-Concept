@@ -1,18 +1,18 @@
-import { CheckCircle, Mail, ArrowRight } from "lucide-react";
+import { CheckCircle, Phone, ArrowRight } from "lucide-react";
 import { Button } from "./ui/button";
 import aboutImage from "@/assets/about-image.jpg";
 
 const AboutSection = () => {
   const features = [
     {
-      title: "Discover Events Across Africa",
+      title: "Shaping Tomorrow, Transforming Today",
       description:
-        "From Lagos to Nairobi, Cape Town to Cairo - find tech events happening in your city or across the continent.",
+        "Empowering businesses to create meaningful change, driving innovation",
     },
     {
-      title: "List Your Event for Free",
+      title: "Innovating Today, Empowering Tomorrow",
       description:
-        "Event organizers can easily list their conferences, workshops, and meetups on our platform and reach thousands of tech enthusiasts.",
+        "Partner with us to unlock new possibilities, drive progress, and shape a future filled with success",
     },
   ];
 
@@ -24,18 +24,19 @@ const AboutSection = () => {
           <div>
             <div className="flex items-center gap-3 mb-6">
               <span className="w-8 h-[2px] bg-primary" />
-              <span className="text-primary font-medium">About ATE</span>
+              <span className="text-primary font-medium">About Us</span>
               <span className="w-8 h-[2px] bg-primary" />
             </div>
 
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-              <span className="text-foreground">Africa's Leading </span>
-              <span className="text-gradient">Tech Event Platform </span>
-              <span className="text-foreground">Connecting Communities</span>
+              <span className="text-foreground">Boost Business </span>
+              <span className="text-gradient">with Our Innovative IT Solutions </span>
+              <span className="text-foreground">for Success story</span>
             </h2>
 
             <p className="text-muted-foreground text-lg mb-8">
-              Africa Tech Events (ATE) is the premier platform for discovering and hosting technology events across Africa. We connect event organizers with attendees, fostering innovation and collaboration throughout the continent's thriving tech ecosystem.
+              Innovating and empowering businesses with tailored solutions for
+              success and growth.
             </p>
 
             <div className="space-y-6 mb-10">
@@ -53,18 +54,16 @@ const AboutSection = () => {
             </div>
 
             <div className="flex flex-wrap items-center gap-4">
-              <Button size="lg" className="gap-2" asChild>
-                <a href="/contact">
-                  Get In Touch <ArrowRight size={18} />
-                </a>
+              <Button size="lg" className="gap-2">
+                Get In Touch <ArrowRight size={18} />
               </Button>
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center">
-                  <Mail className="text-primary" size={20} />
+                  <Phone className="text-primary" size={20} />
                 </div>
                 <div>
-                  <p className="text-sm text-muted-foreground">Email Us</p>
-                  <p className="font-semibold text-foreground">info@ate.com</p>
+                  <p className="text-sm text-muted-foreground">Call Any Time</p>
+                  <p className="font-semibold text-foreground">(123) 4567 8900</p>
                 </div>
               </div>
             </div>
@@ -75,7 +74,7 @@ const AboutSection = () => {
             <div className="relative rounded-2xl overflow-hidden shadow-card">
               <img
                 src={aboutImage}
-                alt="Tech professionals at African tech event"
+                alt="Professional working with technology"
                 className="w-full h-auto object-cover"
               />
               {/* Decorative elements */}
